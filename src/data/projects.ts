@@ -1,0 +1,210 @@
+import type { Project } from '../types/portfolio';
+
+export const projects: Project[] = [
+  {
+    id: 'jas-traders',
+    title: 'JAS Traders Website',
+    badge: 'Commercial Web',
+    category: ['all', 'web'],
+    summary: 'Commercial business website for an eco-friendly paper-bag manufacturing enterprise.',
+    description:
+      'A dedicated commercial business website developed for JAS Traders, an eco-friendly paper-bag manufacturing enterprise. Built to showcase packaging products, production capabilities, quality standards, and receive quotation requests.',
+    technologies: ['React', 'JavaScript', 'CSS', 'Vercel'],
+    coverImage: '/projects/jas-traders/cover.jpg',
+    links: [
+      {
+        label: 'Visit Website',
+        url: 'https://jas-traders-23.vercel.app/',
+        type: 'live',
+      },
+    ],
+    role: 'Lead Developer',
+    status: 'Live on Vercel',
+    keyFeatures: [
+      'Commercial paper packaging showcase with detailed specs',
+      'Direct customer inquiry and quote submission form',
+      'Lightweight assets optimized for fast loading',
+      'Fully responsive across mobile and desktop devices',
+    ],
+  },
+  {
+    id: 'aj-controller',
+    title: 'AJ Controller',
+    badge: 'Android / Flutter',
+    category: ['all', 'mobile'],
+    summary: 'Flutter application converting an Android smartphone into a low-latency PC controller over Bluetooth.',
+    description:
+      'A cross-device Flutter application connecting an Android smartphone to a PC over low-latency Bluetooth. Includes customizable gamepad layouts, racing simulator tilt controls, touch trackpad, and media shortcuts.',
+    technologies: ['Flutter', 'Dart', 'Bluetooth Low Energy'],
+    coverImage: '/projects/aj-controller/cover.jpg',
+    links: [
+      {
+        label: 'GitHub Repository',
+        url: 'https://github.com/amarwin28/AJ-CONTOLLER',
+        type: 'github',
+      },
+    ],
+    role: 'Creator & Developer',
+    status: 'Open Source',
+    keyFeatures: [
+      'Low-latency Bluetooth handshake and device pairing',
+      'Gamepad, racing simulator tilt, and touch trackpad modes',
+      'Haptic feedback and custom button mappings',
+      'Clean ergonomics-focused Flutter interface',
+    ],
+    screenshots: [
+      { src: '/projects/aj-controller/screenshots/02-pc-controller-gamepad.jpg', caption: 'Gamepad Controller' },
+      { src: '/projects/aj-controller/screenshots/03-pc-controller-racing.jpg', caption: 'Racing Mode' },
+      { src: '/projects/aj-controller/screenshots/04-gamepad-layout.jpg', caption: 'Layout Setup' },
+      { src: '/projects/aj-controller/screenshots/07-bluetooth-devices.jpg', caption: 'Bluetooth Scanner' },
+    ],
+  },
+  {
+    id: 'jarvis',
+    title: 'JARVIS',
+    badge: 'AI Assistant',
+    category: ['all', 'ai-ml', 'systems', 'mobile'],
+    summary: 'Personal AI assistant with voice commands, task management, and alarms for Android and Windows.',
+    description:
+      'A cross-platform personal AI assistant built with Flutter. Features system voice control, context memory, scheduled tasks, alarms, and quick actions, with separate builds for Android and Windows.',
+    technologies: ['Flutter', 'Dart', 'Speech Synthesis', 'SQLite'],
+    coverImage: '/projects/jarvis/cover.jpg',
+    links: [
+      {
+        label: 'Android Repository',
+        url: 'https://github.com/amarwin28/JARVIS-ANDROID',
+        type: 'github-android',
+      },
+      {
+        label: 'Windows Repository',
+        url: 'https://github.com/amarwin28/JARVIS-WINDOWS',
+        type: 'github-windows',
+      },
+    ],
+    role: 'Creator & Architect',
+    status: 'Open Source',
+    keyFeatures: [
+      'Voice-activated commands with visual speech feedback',
+      'Persistent task management and prioritized to-do lists',
+      'Scheduled alarms with reliable system notifications',
+      'Native builds for both Windows and Android platforms',
+    ],
+    screenshots: [
+      { src: '/projects/jarvis/windows/01-assistant.png', caption: 'Windows Desktop Assistant' },
+      { src: '/projects/jarvis/windows/02-tasks.png', caption: 'Task Management Engine' },
+      { src: '/projects/jarvis/windows/06-arc-reactor-listening.png', caption: 'Voice Interface' },
+      { src: '/projects/jarvis/android/02-home.jpg', caption: 'Android Mobile Home' },
+    ],
+  },
+  {
+    id: 'loanlens-ai',
+    title: 'LoanLens AI',
+    badge: 'Fintech AI',
+    category: ['all', 'ai-ml', 'web'],
+    summary: 'Fintech web app evaluating credit risk and loan eligibility with interactive scoring dashboards.',
+    description:
+      'An intelligent fintech assessment application using machine learning to evaluate borrower risk, predict loan eligibility, and present risk scoring models through an interactive dashboard.',
+    technologies: ['React', 'TypeScript', 'Vite', 'Machine Learning', 'Tailwind CSS'],
+    coverImage: '/projects/loanlens-ai/cover.png',
+    links: [
+      {
+        label: 'Visit Live Application',
+        url: 'https://loanlens-ai-beta.vercel.app/',
+        type: 'live',
+      },
+    ],
+    role: 'Frontend & ML Integration',
+    status: 'Live on Vercel',
+    keyFeatures: [
+      'Borrower credit risk assessment models',
+      'Dynamic loan eligibility scorecards with visual indicators',
+      'Interactive financial variable simulations',
+      'Responsive fintech dashboard interface',
+    ],
+  },
+  {
+    id: 'skillgap-ai',
+    title: 'SkillGap AI',
+    badge: 'Desktop App',
+    category: ['all', 'ai-ml', 'systems'],
+    summary: 'Offline Java desktop application analyzing resume skill coverage against technical job benchmarks.',
+    description:
+      'An offline Java desktop application designed to evaluate candidate resumes against technical role benchmarks, calculating compatibility scores and pinpointing exact skill gaps with recommendations.',
+    technologies: ['Java', 'Swing / AWT', 'Resume Parsing'],
+    coverImage: '/projects/skillgap-ai/cover.svg',
+    links: [],
+    role: 'Lead Developer',
+    status: 'Offline Java Application',
+    keyFeatures: [
+      'Zero-network offline processing ensuring candidate privacy',
+      'Role benchmark database for software engineering profiles',
+      'Algorithmic match scoring and visual gap breakdown',
+      'Exportable personalized recommendation report',
+    ],
+  },
+  {
+    id: 'feedguard-ai',
+    title: 'FeedGuard AI',
+    badge: 'Agricultural AI',
+    category: ['all', 'ai-ml', 'web'],
+    summary: 'Collaborative AI feed-quality platform with React/Vite, FastAPI, PostgreSQL, and classification models.',
+    description:
+      'An agricultural feed quality evaluation platform built collaboratively. Utilizes machine learning classification models to inspect feed composition, detect anomalies, and generate compliance reports.',
+    technologies: ['React', 'Vite', 'FastAPI', 'PostgreSQL', 'Machine Learning'],
+    coverImage: '/projects/feedguard-ai/cover.png',
+    links: [
+      {
+        label: 'Visit Platform',
+        url: 'https://feedguard.vercel.app/',
+        type: 'live',
+      },
+    ],
+    role: 'Frontend & API Integration',
+    status: 'Live on Vercel',
+    keyFeatures: [
+      'Machine learning feed screening and classification',
+      'FastAPI asynchronous backend with PostgreSQL storage',
+      'Batch testing report generation with history logs',
+      'Collaborative team engineering',
+    ],
+  },
+  {
+    id: 'dc-outpass',
+    title: 'DC Outpass',
+    badge: 'Campus System',
+    category: ['all', 'web'],
+    summary: 'Collaborative digital campus outpass management portal for Dhaanish Chennai College of Engineering.',
+    description:
+      'A collaborative digital campus outpass management portal replacing paper passes with a streamlined approval workflow connecting students, faculty advisors, wardens, and campus gatekeepers.',
+    technologies: ['Web Development', 'Role-Based Access', 'Database Management'],
+    coverImage: '/projects/dc-outpass/cover.svg',
+    links: [],
+    role: 'Collaborative Developer',
+    status: 'Campus Solution',
+    keyFeatures: [
+      'Hierarchical approval routing from student to warden',
+      'Real-time gatekeeper verification and timestamp tracking',
+      'Automated status notifications and student request logs',
+      'Secure role-based access control',
+    ],
+  },
+  {
+    id: 'nanospark',
+    title: 'NanoSpark Web Designing',
+    badge: 'Design Initiative',
+    category: ['all', 'web'],
+    summary: 'Collaborative web design initiative crafting tailored brand storefronts and digital experiences.',
+    description:
+      'A collaborative web design and development initiative focused on creating bespoke, responsive digital storefronts and clean web experiences for businesses and emerging ventures.',
+    technologies: ['Web Design', 'Responsive UI', 'Frontend Development'],
+    coverImage: '/projects/nanospark/cover.svg',
+    links: [],
+    role: 'Collaborator & Frontend Specialist',
+    status: 'Design Initiative',
+    keyFeatures: [
+      'Tailored responsive layouts for desktop, tablet, and mobile',
+      'Contemporary typography and clear visual hierarchy',
+      'Performance-focused web interfaces',
+    ],
+  },
+];
